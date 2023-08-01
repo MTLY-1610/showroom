@@ -62,10 +62,9 @@ html {
 body {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: row;
   font-family: "Medium-Expanded";
   font-size: 12px;
   font-weight: 100;
@@ -74,12 +73,11 @@ body {
 }
 body #vertical {
   display: flex;
-  flex-direction: column;
-  width: 100%;
   height: fit-content;
   padding: 2rem;
 }
 body #vertical .main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,17 +99,16 @@ body #vertical .main .menu .nav-items {
   height: 10vh;
 }
 body #vertical .main .menu .nav-items .title {
+  font-family: "DemiOblique";
+  font-size: clamp(8px, 16px, 6rem);
   text-transform: uppercase;
-}
-body #vertical .main .menu .nav-items .display-time {
-  font-family: "Extralight";
 }
 body #vertical .main .menu .nav-items .items {
   font-family: "Demi";
   font-size: 1rem;
 }
 body #vertical .main .menu .nav-items .display-time {
-  font-family: "";
+  font-family: "Demi";
 }
 body #vertical .main .menu .nav-items .button {
   display: flex;
@@ -120,10 +117,10 @@ body #vertical .main .menu .nav-items:last-child {
   text-align: right;
 }
 body #vertical .main .hero {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 body #vertical .main .hero .wrapper {
   width: 100%;
@@ -136,7 +133,7 @@ body #vertical .main .hero .wrapper {
 }
 body #vertical .main .hero .wrapper .hero-items {
   width: 100%;
-  height: 30%;
+  flex-grow: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -151,6 +148,21 @@ body #vertical .main .hero .wrapper .hero-items .baseline {
 }
 body #vertical .main .hero .wrapper .hero-items .midle {
   text-transform: capitalize;
+}
+body .horizontal {
+  height: 100%;
+  width: 300%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body .horizontal .main-hor {
+  width: 300%;
+}
+body .horizontal .main-hor .wrapper-hor {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 /*# sourceMappingURL=y.css.map */
