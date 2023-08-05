@@ -28,10 +28,10 @@ requestAnimationFrame(raf);
 
 const tl = gsap.timeline();
 
-tl.fromTo(".one", {opacity: 0}, {opacity: 1, duration: 0.7}, "1.1")
-tl.fromTo(".two", {opacity: 0}, {opacity: 1, duration: 0.7}, "1.2")
-tl.fromTo(".three", {opacity: 0}, {opacity: 1, duration: 0.7}, "1.3")
-tl.fromTo(".menu", {opacity: 0}, {opacity: 1, duration: 0.7}, "2.2s");
+tl.fromTo(".one", { opacity: 0 }, { opacity: 1, duration: 0.7 }, "1.1")
+tl.fromTo(".two", { opacity: 0 }, { opacity: 1, duration: 0.7 }, "1.2")
+tl.fromTo(".three", { opacity: 0 }, { opacity: 1, duration: 0.7 }, "1.3")
+tl.fromTo(".menu", { opacity: 0 }, { opacity: 1, duration: 0.7 }, "2.2s");
 
 
 

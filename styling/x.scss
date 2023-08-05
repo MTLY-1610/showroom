@@ -83,7 +83,7 @@ $padding2: clamp(2rem, 3rem, 6rem);
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -101,6 +101,7 @@ body {
 
         .main {
             width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -131,12 +132,12 @@ body {
                     }
 
                     .items {
-                        font-family: 'Demi';
+                        font-family: 'Extended';
                         font-size: 1rem;
                     }
 
                     .display-time {
-                        font-family: "Demi";
+                        font-family: "Extralight";
                     }
 
                     .button {
@@ -192,20 +193,30 @@ body {
             }
         }
     }
+
     .horizontal {
-        height: 100%;
+        height: 100vh;
         width: 300%;
         display: flex;
         flex-direction: column;
-        height: 100%;
 
         .main-hor {
             width: 300%;
 
             .wrapper-hor {
+                display: flex;
+                flex-direction: row;
                 align-items: center;
                 justify-content: center;
                 height: 100%;
+
+                hor-items {
+                    display: flex;
+                    flex-direction: row;
+
+
+
+                }
             }
         }
     }
