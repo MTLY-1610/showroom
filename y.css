@@ -1,8 +1,3 @@
-html {
-  overflow: hidden;
-  background: #fff;
-}
-
 @font-face {
   font-family: "Medium-Expanded";
   src: url("/fonts/") format("woff2"), url("/fonts/Slussen-Expanded-Medium.woff") format("woff");
@@ -59,14 +54,19 @@ html {
   font-style: italic;
   font-display: swap;
 }
+html {
+  overflow: hidden;
+  background: #fff;
+}
+
 body {
   width: 100%;
-  height: 200vh;
+  height: 100vh;
   overflow: hidden;
   padding: 0;
   margin: 0;
   font-family: "Medium-Expanded";
-  font-size: 12px;
+  font-size: 8px;
   font-weight: 100;
   background: #000;
   color: #fff;
@@ -75,6 +75,7 @@ body #vertical {
   display: flex;
   height: fit-content;
   padding: 2rem;
+  height: 100%;
 }
 body #vertical .main {
   width: 100%;
@@ -97,25 +98,16 @@ body #vertical .main .menu {
 body #vertical .main .menu .nav-items {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   height: 10vh;
+  font-size: 1.3vw;
+  width: 30vw;
 }
-body #vertical .main .menu .nav-items .title {
-  font-family: "DemiOblique";
-  font-size: clamp(8px, 16px, 6rem);
-  text-transform: uppercase;
-}
-body #vertical .main .menu .nav-items .items {
-  font-family: "Extended";
-  font-size: 1rem;
-}
-body #vertical .main .menu .nav-items .display-time {
-  font-family: "Extralight";
-}
-body #vertical .main .menu .nav-items .button {
-  display: flex;
+body #vertical .main .menu .nav-items:first-child {
+  margin-left: 3rem;
 }
 body #vertical .main .menu .nav-items:last-child {
-  text-align: right;
+  margin-right: 3rem;
 }
 body #vertical .main .hero {
   width: 100%;
@@ -142,7 +134,7 @@ body #vertical .main .hero .wrapper .hero-items {
   border-bottom: #fff 2px solid;
 }
 body #vertical .main .hero .wrapper .hero-items .baseline {
-  font-size: 15rem;
+  font-size: 12vw;
   display: flex;
   justify-self: flex-end;
   font-family: "Demi";

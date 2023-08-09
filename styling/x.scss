@@ -1,13 +1,3 @@
-html {
-    // scroll-behavior: initial;
-    overflow: hidden;
-    background: #fff;
-}
-
-$padding: clamp(1rem, 2rem, 4rem);
-$padding2: clamp(2rem, 3rem, 6rem);
-
-
 
 @font-face {
     font-family: 'Medium-Expanded';
@@ -81,14 +71,24 @@ $padding2: clamp(2rem, 3rem, 6rem);
     font-display: swap;
 }
 
+html {
+    // scroll-behavior: initial;
+    overflow: hidden;
+    background: #fff;
+}
+
+$padding: clamp(1rem, 2rem, 4rem);
+$padding2: clamp(2rem, 3rem, 6rem);
+
+
 body {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     overflow: hidden;
     padding: 0;
     margin: 0;
     font-family: 'Medium-Expanded';
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 100;
     background: #000;
     color: #fff;
@@ -97,6 +97,7 @@ body {
         display: flex;
         height: fit-content;
         padding: $padding;
+        height:100%;
 
 
         .main {
@@ -118,36 +119,24 @@ body {
                 justify-content: space-between;
                 border-bottom: #fff 1px solid;
 
-
-
                 .nav-items {
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
                     height: 10vh;
-
-                    .title {
-                        font-family: "DemiOblique";
-                        font-size: clamp(8px, 16px, 6rem);
-                        text-transform: uppercase;
-                    }
-
-                    .items {
-                        font-family: 'Extended';
-                        font-size: 1rem;
-                    }
-
-                    .display-time {
-                        font-family: "Extralight";
-                    }
-
-                    .button {
-                        display: flex;
-                    }
+                    font-size: 1.3vw;
+                    width: 30vw;
 
                 }
 
+                .nav-items:first-child {
+                    margin-left: 3rem;
+
+
+                }
                 .nav-items:last-child {
-                    text-align: right;
+                    margin-right: 3rem;
+                    
 
                 }
 
@@ -178,8 +167,7 @@ body {
                         border-bottom: #fff 2px solid;
 
                         .baseline {
-                            font-size: 15rem;
-                            display: flex;
+                            font-size: 12vw;                            display: flex;
                             justify-self: flex-end;
                             font-family: 'Demi';
 
@@ -213,8 +201,6 @@ body {
                 hor-items {
                     display: flex;
                     flex-direction: row;
-
-
 
                 }
             }
